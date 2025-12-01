@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "plugins_template"
+name = "camera_plugin_example"
 version = "0.0.1"
 description = "Open source, smart, light-sheet microscopy control software plugin template."
 authors = [{name = "The Dean Lab, UT Southwestern Medical Center"}]
@@ -24,7 +24,7 @@ classifiers = [
 Source = "https://github.com/TheDeanLab/navigate-plugin-template"
 
 [project.entry-points."navigate.plugins"]
-plugin_name = "plugins_template.main:main"
+camera_plugin_example = "camera_plugin.main:main"
 
 [tool.setuptools.package-data]
-plugin_name_data = ["plugin_config.yml",]
+camera_plugin_example_data = ["plugin_config.yml",]
